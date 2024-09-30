@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply m-0 font-sans;
+}
+
+/* Custom Header Styles */
+.header {
+  @apply flex items-center h-16 bg-gradient-to-r from-[#672280] to-[#A626D3] text-white p-5;
+}
+
+/* Responsive Adjustments */
+.header {
+  @apply h-16 md:h-20;
+  /* Adjust height for medium screens */
+}
+
+
+.meme-text {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: Impact, sans-serif;
+  text-shadow:
+    2px 2px 0 black,
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    0 2px 0 black,
+    2px 0 0 black,
+    0 -2px 0 black,
+    -2px 0 0 black,
+    2px 2px 5px black;
+}
